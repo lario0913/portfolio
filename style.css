@@ -115,7 +115,7 @@ main #projects{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid green;
+
     margin-top: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -138,7 +138,7 @@ main .flex-container:nth-child(2){
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10%;
-        border: 2px solid white;
+        background: #b2b2b2;
         padding-top: 4%;
         padding-bottom: 5%;
     }
@@ -232,7 +232,7 @@ main .flex-container:nth-child(2){
     }
     main .flex-container:nth-child(2) .project-tile{
         width: 30%;
-        border: 1px solid white;
+        background: #b2b2b2;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         margin-bottom: 3%;
