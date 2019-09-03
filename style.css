@@ -232,7 +232,7 @@ main .flex-container:nth-child(2){
     }
     main .flex-container:nth-child(2) .project-tile{
         width: 30%;
-        background: #b2b2b2;
+        background:rgba(27, 75, 31, 0.3);
         padding-top: 1.5%;
         padding-bottom: 1.5%;
         margin-bottom: 3%;
