@@ -1,0 +1,255 @@
+/*--------------------------------------------------------------------------
+                    GENERAL STYLE
+---------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1c;
+}
+
+h1,p,h2, h3{
+    color: #b2b2b2;
+    font-family: 'Raleway';
+}
+
+
+/*--------------------------------------------------------------------------
+                    HEADER STYLE
+---------------------------------------------------------------------------*/
+
+header,footer{
+    background-color: rgb(27, 75, 31);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 25px 0;
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+
+}
+    header{
+        padding-bottom: 0px;
+        position: fixed;
+        width: 100%;
+        height: 18%;
+    }
+
+    header h1{
+    flex-grow: 1;
+    align-self: center;
+    
+    }
+
+    header nav{
+        background: rgb(28, 28, 28);
+        flex-grow: 1;
+        width: 100%;
+        margin-left: auto;
+        margin-top: 12px;
+        margin-right: auto;
+        border-bottom: 2px solid rgb(27, 75, 31);
+    }
+        header nav ul{
+            display: flex;
+            justify-content: space-around;
+            padding: 4px;
+            list-style: none;
+        }
+            header nav ul li{
+                text-decoration: none;
+            }
+
+                header nav ul li a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                    header nav ul li a:hover{
+                        color: rgba(255, 255, 255, 0.3);
+                        font-weight: bolder;
+                    }
+/*--------------------------------------------------------------------------
+                    WELCOME SECTION STYLES
+---------------------------------------------------------------------------*/
+
+main{
+    text-align: center;
+    padding-top: 150px;
+    padding-left: auto;
+    padding-right: auto;
+}
+    main .flex-container:nth-child(1){
+        width: 60%;
+        margin: 0 auto;
+        border: 4px solid rgb(27, 75, 31);
+        box-shadow: inset 3px 3px 5px green;
+        padding: 20px;
+    }
+        main .flex-container:nth-child(1) h1{
+            color: rgb(27, 75, 31);
+            font-weight: bolder;
+            margin-bottom: 1.5%
+        }
+        main .flex-container:nth-child(1) img{
+            border-radius: 50%
+        }
+
+/*--------------------------------------------------------------------------
+                    PROJECTS SECTION STYLES
+---------------------------------------------------------------------------*/
+main #projects{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid green;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+main .flex-container:nth-child(2){
+    
+    width: 78%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom:5px;
+}
+
+    main .flex-container:nth-child(2) .project-tile{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        border: 2px solid white;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+     
+                main .flex-container:nth-child(2) .project-tile div a{
+                    color: #b2b2b2;
+                    text-decoration: none;
+                    font-weight: bolder;
+                }
+                    main .flex-container:nth-child(2) .project-tile div a:hover{
+                        color: rgba(255, 255, 255, 0.3);
+                        font-weight: bolder;
+                    
+                    }
+        
+        main .flex-container:nth-child(2) .project-tile img{
+        width: 80%;
+        border-radius: 10%;
+        }
+
+/*-------------------------------------------------------------------------
+                    SUBMAIN SECTION STYLES
+--------------------------------------------------------------------------*/
+#submain{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%; 
+}
+    div h2{
+        color: aquamarine;
+        margin-bottom: 1.5%;
+    }
+
+        div p .connect{
+            padding-left: 5%;
+        }
+
+        div p a{
+            margin-left: 1%;
+            color: #b2b2b2;
+            text-decoration: none;
+            font-weight: normal;
+            font-style: italic;
+        }
+            div p a:hover{
+                font-weight: bolder;
+                color: rgba(255, 255, 255, 0.3);
+            }
+        
+
+        #submain img{
+            width: 3%;
+        }
+
+/****************************************************************************
+                                BUTTONS
+*****************************************************************************/
+.button{
+    width: 50%;
+    background-color:rgb(27, 75, 31);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 5px;
+    border: none;
+}
+    .button a{
+        display: block;
+        text-decoration: none;
+        color: #b2b2b2;
+        font-weight: normal;
+        font-size: 1.24em
+    }
+        .button a:hover{
+            color: #1c1c1c;
+        }
+
+/****************************************************************************
+                                MEDIA QUERIES
+*****************************************************************************/
+@media only screen and (min-width:750px){
+    main{
+    }
+    main .flex-container:nth-child(1){
+        width: 35%;
+    }
+    
+    main .flex-container:nth-child(2){
+        width: 85%;
+        background-color: #1c1c1c;
+    }
+    main .flex-container:nth-child(2) .project-tile{
+        width: 30%;
+        border: 1px solid white;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        margin-bottom: 3%;
+    }
+    main .flex-container:nth-child(2) .project-tile div{
+        margin-bottom: 3px;
+        border: 1px 
+    }
+    main .flex-container:nth-child(2) .project-tile div{
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: auto;
+        margin-bottom: 1%;
+        }
+    #submain img{
+            width: 1.5%;
+        }
+}
