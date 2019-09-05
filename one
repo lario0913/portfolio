@@ -1,0 +1,46 @@
+    .header .header-item{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+        .header .header-item img#logo{
+            width: 190px;
+        }
+        .header .header-item nav{
+            padding-right: 25px;
+            width: 250px;
+            margin: 0px;
+        }
+            nav ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                list-style: none;
+                width: 100%;
+            }
+                nav ul li a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1rem;
+                }
+        .header .header-item .item:nth-child(1){
+            margin-top: 25px;
+            width: 40%;
+            color: white;
+            margin-bottom: 20px;
+        }
+            .header .header-item .item:nth-child(1) h2,h3{
+                color: white;
+            }
+        .header .header-item .item:nth-child(2){
+            width: 20%;
+            min-height: 150px;
+            
+        }
+            .header .header-item .item:nth-child(2) #hero{
+                width: 100%;
+                height: 100%;
+            }
